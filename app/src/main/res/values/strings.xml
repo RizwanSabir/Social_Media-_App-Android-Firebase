@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Hum</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="Home">Home</string>
+    <string name="Search">Search</string>
+    <string name="Add">Add</string>
+    <string name="Heart">Heart</string>
+    <string name="Profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".UpdateProfilePic">
+
+    <TextView
+        android:id="@+id/TextUpload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Upload Profile Photo"
+        android:textSize="30dp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="418dp"
+        android:layout_height="293dp"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextUpload">
+
+        <io.github.florent37.shapeofview.shapes.DiagonalView
+            android:id="@+id/diagonalView"
+            android:layout_width="match_parent"
+            android:layout_height="288dp"
+            android:elevation="4dp"
+            android:visibility="invisible"
+            app:shape_diagonal_angle="10"
+            app:shape_diagonal_position="bottom">
+
+            <ImageView
+                android:id="@+id/coverPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="329dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+
+        </io.github.florent37.shapeofview.shapes.DiagonalView>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/cameraOpen"
+        android:layout_width="57dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="80dp"
+        android:background="@drawable/roundbtn"
+        android:src="@drawable/ic_baseline_camera_alt_24"
+        app:layout_constraintBottom_toBottomOf="@+id/addimage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/addimage"
+        app:layout_constraintTop_toTopOf="@+id/addimage"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/addimage"
+        android:layout_width="57dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/gallery2"
+        app:layout_constraintEnd_toStartOf="@+id/cameraOpen"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/nextbtnnot"
+        android:enabled="false"
+        android:text="Next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addimage" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="8dp"
+        android:text="Open Gallery"
+        app:layout_constraintBottom_toTopOf="@+id/nextBtn"
+        app:layout_constraintEnd_toEndOf="@+id/addimage"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addimage"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="8dp"
+        android:text="Open Camera"
+        app:layout_constraintEnd_toEndOf="@+id/cameraOpen"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/cameraOpen" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+
+
+        android:id="@+id/profile_image"
+        android:layout_width="178dp"
+        android:layout_height="156dp"
+
+        android:background="@drawable/whitecircle"
+        android:visibility="visible"
+        app:civ_border_color="@color/orange"
+        app:civ_border_width="5dp"
+        app:civ_shadow_color="#3f51b5"
+        app:civ_shadow_radius="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/l1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

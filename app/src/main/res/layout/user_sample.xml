@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:diagonal="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp">
+
+    <io.github.florent37.shapeofview.shapes.CircleView
+        android:id="@+id/circleView"
+        android:layout_width="@dimen/_60mdp"
+        android:layout_height="@dimen/_60mdp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        diagonal:layout_constraintStart_toStartOf="parent"
+        diagonal:layout_constraintTop_toTopOf="parent"
+        diagonal:shape_circle_borderWidth="@dimen/_5mdp">
+
+        <ImageView
+            android:id="@+id/profileimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/loading"
+            diagonal:layout_constraintStart_toStartOf="parent"
+            diagonal:layout_constraintTop_toTopOf="parent" />
+
+    </io.github.florent37.shapeofview.shapes.CircleView>
+
+    <TextView
+        android:id="@+id/Pname"
+        android:layout_width="77dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14font_mdp"
+        diagonal:layout_constraintBottom_toTopOf="@+id/ProfileId"
+        diagonal:layout_constraintStart_toEndOf="@+id/circleView"
+        diagonal:layout_constraintTop_toTopOf="parent"
+        diagonal:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/ProfileId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="TextView"
+        diagonal:layout_constraintBottom_toBottomOf="@+id/circleView"
+        diagonal:layout_constraintStart_toEndOf="@+id/circleView"
+        diagonal:layout_constraintTop_toBottomOf="@+id/Pname" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Follow_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/follow_btn_bg"
+        android:text="Follow"
+        diagonal:layout_constraintBottom_toBottomOf="@+id/circleView"
+        diagonal:layout_constraintEnd_toEndOf="parent"
+        diagonal:layout_constraintTop_toTopOf="@+id/circleView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

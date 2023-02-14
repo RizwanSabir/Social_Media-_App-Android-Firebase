@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "364588583782",
+    "project_id": "humproject-ec33a",
+    "storage_bucket": "humproject-ec33a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:364588583782:android:8850170b6d46c09726d6a7",
+        "android_client_info": {
+          "package_name": "com.example.dosribaar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "364588583782-2k8tudvj0595skl9s2sn2qupl84vo90e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHgm4DwFC5P5gl57YtTXCrIOtV9851BOE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "364588583782-2k8tudvj0595skl9s2sn2qupl84vo90e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
